@@ -1,0 +1,24 @@
+{
+  "name": "fancy-example",
+  "version": "1.0.0",
+  "description": "An advanced example using Chemical components.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemicaljs/fancy-example.git"
+  },
+  "author": "Nebelung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemicaljs/fancy-example/issues"
+  },
+  "homepage": "https://github.com/chemicaljs/fancy-example#readme",
+  "dependencies": {
+    "chemicaljs": "^1.7.3",
+    "express": "^4.19.2"
+  }
+}

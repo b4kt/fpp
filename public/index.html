@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Project</title>
+    <link rel="stylesheet" href="/style.css">
+    <script data-transport="libcurl" src="/chemical.js"></script>
+    <script src="/chemical.components.js"></script>
+    <script src="/index.js"></script>
+</head>
+<body>
+  
+   <h1 class="banner">Freedom Project</h1>
+     <div class="search-container">
+    <input class="search-bar" id="search" is="chemical-input" data-search-engine="https://google.com/search?q=%s" data-frame="web" data-auto-https placeholder="Search or enter a link">  </div>
+<div><button class="go" data-for="search" is="chemical-button">GO</button> <button class="go" id="toggleButton">new tab toggle</button><button class="go" type="button" onclick="window.location.href='https://0xdc.icu';">link listing</button><button class="go" id="searchEngineButton">use brave search</button>
+</div> <br><br>
+  <section id="controls" is="chemical-controls">
+        <button onclick="chemicalAction('back', 'web')">Back</button>
+        <button onclick="chemicalAction('forward', 'web')">Forward</button>
+        <button onclick="chemicalAction('reload', 'web')">Reload</button>
+        <button onclick="chemicalAction('close', 'web')">Close</button>
+    </section>
+<iframe data-controls="controls" id="web" is="chemical-iframe"></iframe>
+</body>
+</html>
