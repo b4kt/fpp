@@ -33,6 +33,6 @@ An intermediary between your browser and sites, hiding real traffic behind domai
 
 - Fork repository
 - Connect to PaaS (platform as a service)
-- Deploy (should build itself and spit out a integrated domain
+- Deploy (should build itself and spit out a integrated domain)
 - Connect your domains to your PaaS using cloudflare (or not), and configure firewall rules
 
