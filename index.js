@@ -2,7 +2,15 @@ import { ChemicalServer } from "chemicaljs";
 import express from "express";
 import bodyParser from 'body-parser';
 import os from "os";
-const [app, listen] = new ChemicalServer();
+const [app, listen] = new ChemicalServer({
+    default: "uv",
+    uv: true,
+    rammerhead: false,
+    experimental: {
+        scramjet: false,
+        meteor: false,
+    }
+});
 const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static("public", {
