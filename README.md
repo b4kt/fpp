@@ -21,7 +21,7 @@ An intermediary between your browser and sites, hiding real traffic behind domai
 - Chrome for android is not supported because it does not support shared workers
 - Some firefox clients may work, still needs testing
 
-## Self-Hosting
+## Self-Hosting (Best run on Ubuntu 22.04 + Node 22)
 - Git clone the repository
 - Go to it (cd /fpp)
 - npm install
