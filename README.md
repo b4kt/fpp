@@ -15,7 +15,7 @@ An intermediary between your browser and sites, hiding real traffic behind domai
 
 ## Default configuration
 - Libcurl (epoxy support and recommended) by default for compatibility
-- Port 3000
+- Port 3000 (recommend changing to 80 for forward facing)
 
 ## Considerations
 - Chrome for android is not supported because it does not support shared workers
