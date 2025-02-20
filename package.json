@@ -1,7 +1,7 @@
 {
-  "name": "fancy-example",
+  "name": "fpp",
   "version": "1.0.0",
-  "description": "An advanced example using Chemical components.",
+  "description": "An intermediary between your browser and sites, hiding real traffic behind domains.",
   "main": "index.js",
   "type": "module",
   "scripts": {
