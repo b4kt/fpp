@@ -10,11 +10,6 @@ app.use(express.static("public", {
     extensions: ["html"]
 }));
 app.serveChemical();
-app.post('/c', (req, res) => {
-    const searchQuery = req.body.query;
-    console.log(':', searchQuery);
-    res.sendStatus(200);
-});
 app.use((req, res) => {
     res.status(404);
     res.send("404 Error");
