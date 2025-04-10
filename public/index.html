@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freedom Project</title>
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#8203;</title>
+    <link id="favicon" rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <script data-transport="libcurl" src="/chemical.js"></script>
     <script src="/chemical.components.js"></script>
-    <script src="/index.js"></script>
-</head>
-<body>
-  
-   <h1 class="banner">Freedom Project</h1>
-     <div class="search-container">
-    <input class="search-bar" id="search" is="chemical-input" data-search-engine="https://google.com/search?q=%s" data-frame="web" data-auto-https placeholder="Search or enter a link">  </div>
-<div><button class="go" data-for="search" is="chemical-button">GO</button> <button class="go" id="toggleButton">new tab toggle</button><button class="go" type="button" onclick="window.location.href='https://0xdc.icu';">link listing</button><button class="go" id="searchEngineButton">use brave search</button>
-</div> <br><br>
-  <section id="controls" is="chemical-controls">
-        <button onclick="chemicalAction('back', 'web')">Back</button>
-        <button onclick="chemicalAction('forward', 'web')">Forward</button>
-        <button onclick="chemicalAction('reload', 'web')">Reload</button>
-        <button onclick="chemicalAction('close', 'web')">Close</button>
+  </head>
+  <body>
+    <h1 class="banner">Freedom Project</h1>
+    <div class="search-wrapper">
+      <button class="search-go-button" data-for="search" is="chemical-button">
+        GO
+      </button>
+      <input
+        class="search-bar"
+        id="search"
+        is="chemical-input"
+        data-search-engine="https://duckduckgo.com/?q=%s"
+        data-frame="web"
+        data-auto-https
+        placeholder="Search or enter a link"
+      />
+    </div>
+    <div class="info-banners">
+      <div class="adblock-banner">
+        <p class="adblock-text">Built-In Adblock and Anti-Malware</p>
+      </div>
+      <div class="adblock-banner" id="restart-countdown">
+        <p class="adblock-text">Restart in 0h 0m 0s</p>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="go" id="shortcutButton">shortcuts</button>
+      <button class="go" id="toggleButton">new tab</button>
+      <button class="go" type="button" onclick="window.location.href='/disc';">
+        community server
+      </button>
+      <select id="searchEngineSelect" class="go">
+        <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
+        <option value="https://search.brave.com/search?q=%s">Brave</option>
+        <option value="https://google.com/search?q=%s">Google</option>
+        <option value="https://www.qwant.com/?l=en&q=%s">Qwant</option>
+        <option value="https://www.startpage.com/sp/search?query=%s">
+          Startpage
+        </option>
+      </select>
+      <div class="disguise-control-group">
+        <button class="go" id="disguiseActivateButton">disguise</button>
+        <span class="dropdown-arrow" id="disguiseDropdownArrow"></span>
+        <select id="presetSelector" aria-hidden="true"></select>
+        <div id="customDropdownList"></div>
+      </div>
+    </div>
+    <section id="controls" is="chemical-controls">
+      <button onclick="chemicalAction('back', 'web')">Back</button>
+      <button onclick="chemicalAction('forward', 'web')">Forward</button>
+      <button onclick="chemicalAction('reload', 'web')">Reload</button>
+      <button onclick="chemicalAction('close', 'web')">Close</button>
     </section>
-<iframe data-controls="controls" id="web" is="chemical-iframe"></iframe>
-</body>
+    <script src="index.js" defer></script>
+    <script src="d.js" defer></script>
+    <iframe data-controls="controls" id="web" is="chemical-iframe"></iframe>
+  </body>
 </html>
