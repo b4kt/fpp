@@ -1,15 +1,19 @@
 ## About
 An intermediary between your browser and sites, hiding real traffic behind domains
 
+V2 Stable released - 4/9/25
+
 ## Implementation
 
-- Google/Brave toggle
+- Custom search engines
 - New tab toggle
 - Fullscreen embedded default view
 - Future proof with multiple protocols selectable
-- Simple with a minimal amount of code
 - Encrypted paths, ensuring no snooping server side
-
+- Tab Disguises
+- Fresh look
+- Restart countdown
+  
 ## Backend credits/License
 [AGPL 3.0](https://github.com/chemicaljs/chemical)
 
