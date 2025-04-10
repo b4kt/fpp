@@ -19,7 +19,7 @@ V2 Stable released - 4/9/25
 
 ## Default configuration
 - Libcurl (epoxy support and recommended) by default for compatibility
-- Port 3000 (recommend changing to 80 for forward facing)
+- Port 80 (front facing, change for non-front facing)
 
 ## Considerations
 - Chrome for android is not supported because it does not support shared workers
